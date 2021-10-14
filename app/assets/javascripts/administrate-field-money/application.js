@@ -35,8 +35,8 @@ $(function() {
       );
 
       console.log(this.value)
-      console.log($(this, input))
-      
+      console.log(this)
+
       if (this.value === null || this.value === "" || this.value === "$0.00"){
 
       }
