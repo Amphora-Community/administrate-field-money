@@ -33,7 +33,9 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
-      console.log(this)
+      if (this.value === nil || this.value === "") {
+         this.value = "0.00"
+      }
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
