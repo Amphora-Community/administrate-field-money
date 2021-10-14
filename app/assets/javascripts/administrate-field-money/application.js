@@ -9,7 +9,7 @@ $(function() {
       EVENTS_TO_SYNC = 'change keyup paste';
 
   getUnmaskedMoneyCents = function($el) {
-
+    var unmasked = $el.maskMoney("unmasked")[0];
     return unmasked ? unmasked : 0;
   };
 
