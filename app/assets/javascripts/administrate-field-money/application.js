@@ -34,13 +34,6 @@ $(function() {
         syncUnmaskedValueWithHiddenField
       );
 
-      console.log(this.value)
-      console.log(this)
-
-      if (this.value === null || this.value === "" || this.value === "$0.00"){
-
-      }
-
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
