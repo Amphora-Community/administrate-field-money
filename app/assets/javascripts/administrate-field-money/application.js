@@ -36,7 +36,7 @@ $(function() {
 
       console.log(this.value)
       if (this.value === null || this.value === "" || this.value === "$0.00"){
-        syncUnmaskedValueWithHiddenField()
+        updateSiblingHiddenFieldValueOf(this, this.value)
       }
 
   };
