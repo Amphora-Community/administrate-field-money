@@ -33,7 +33,10 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
-      getUnmaskedMoneyCents(this)
+
+      console.log(this.value)
+      $(this).value(this.maskMoney('unmasked')[0])
+
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
