@@ -33,8 +33,10 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
+
+      console.log(this.value)
       if (this.value === null || this.value === "") {
-         this.value = "0.00"
+         this.value("0.00")
       }
   };
 
