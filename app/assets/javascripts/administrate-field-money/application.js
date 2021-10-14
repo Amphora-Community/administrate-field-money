@@ -20,7 +20,6 @@ $(function() {
 
   syncUnmaskedValueWithHiddenField = function() {
     updateSiblingHiddenFieldValueOf($(this), getUnmaskedMoneyCents);
-    console.log("Called here <<<<<<<<<<<<")
   };
 
   $applyMaskMoneyTo = function(el) {
@@ -35,8 +34,6 @@ $(function() {
       );
       $(this).keydown();
   };
-
-
 
   $('[data-maskmoney]').each(setupMaskMoney);
 });
