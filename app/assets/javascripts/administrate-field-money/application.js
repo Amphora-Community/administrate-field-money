@@ -6,10 +6,12 @@ $(function() {
       syncUnmaskedValueWithHiddenField,
       $applyMaskMoneyTo,
       setupMaskMoney,
-      EVENTS_TO_SYNC = 'change keyup paste ready scroll';
+      EVENTS_TO_SYNC = 'change keyup paste';
 
   getUnmaskedMoneyCents = function($el) {
-    return $el.maskMoney('unmasked')[0];
+    var unmasked = $el.maskMoney("unmasked")[0];
+
+    return unmasked ? unmasked : 0;
   };
 
   updateSiblingHiddenFieldValueOf = function($el, getNewValue) {
@@ -35,4 +37,5 @@ $(function() {
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
+  console.log("Are we in function <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
 });
