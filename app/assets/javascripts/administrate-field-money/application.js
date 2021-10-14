@@ -6,7 +6,7 @@ $(function() {
       syncUnmaskedValueWithHiddenField,
       $applyMaskMoneyTo,
       setupMaskMoney,
-      EVENTS_TO_SYNC = 'change keyup paste ready load blur loadeddata';
+      EVENTS_TO_SYNC = 'change keyup paste ready load blur keydown';
 
   getUnmaskedMoneyCents = function($el) {
     return $el.maskMoney('unmasked')[0];
@@ -33,8 +33,10 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
-
+      this.keydown();
   };
+
+
 
   $('[data-maskmoney]').each(setupMaskMoney);
 });
