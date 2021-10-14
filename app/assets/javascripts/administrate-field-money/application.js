@@ -35,7 +35,10 @@ $(function() {
       );
 
       console.log(this.value)
-      $(this).value(this.maskMoney('unmasked')[0])
+      if (this.value === null || this.value === ""){
+        console.log("made it")
+      $(this).value("0.00")
+      }
 
   };
 
