@@ -20,6 +20,7 @@ $(function() {
 
   syncUnmaskedValueWithHiddenField = function() {
     updateSiblingHiddenFieldValueOf($(this), getUnmaskedMoneyCents);
+    console.log("Called here <<<<<<<<<<<<")
   };
 
   $applyMaskMoneyTo = function(el) {
@@ -35,11 +36,4 @@ $(function() {
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
-
-  // if any form is submitted trigger conversion
-  $("form").submit(function (e) {
-    syncUnmaskedValueWithHiddenField()
-});
-
-
 });
