@@ -6,7 +6,7 @@ $(function() {
       syncUnmaskedValueWithHiddenField,
       $applyMaskMoneyTo,
       setupMaskMoney,
-      EVENTS_TO_SYNC = 'change keyup paste ready show';
+      EVENTS_TO_SYNC = '';
 
   getUnmaskedMoneyCents = function($el) {
     return $el.maskMoney('unmasked')[0];
@@ -33,11 +33,6 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
-
-      console.log(this.value)
-      if (this.value === null || this.value === "" || this.value === "$0.00"){
-        updateSiblingHiddenFieldValueOf(this, this.value)
-      }
 
   };
 
