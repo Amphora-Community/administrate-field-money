@@ -33,7 +33,7 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
-      this.keydown();
+      $(this).keydown();
   };
 
 
