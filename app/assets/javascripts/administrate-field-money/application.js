@@ -35,4 +35,11 @@ $(function() {
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
+
+  // if any form is submitted trigger conversion
+  $("form").submit(function (e) {
+    syncUnmaskedValueWithHiddenField()
+});
+
+
 });
