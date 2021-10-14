@@ -6,7 +6,7 @@ $(function() {
       syncUnmaskedValueWithHiddenField,
       $applyMaskMoneyTo,
       setupMaskMoney,
-      EVENTS_TO_SYNC = 'change keyup paste trigger';
+      EVENTS_TO_SYNC = 'change keyup paste ready';
 
   getUnmaskedMoneyCents = function($el) {
     return $el.maskMoney('unmasked')[0];
