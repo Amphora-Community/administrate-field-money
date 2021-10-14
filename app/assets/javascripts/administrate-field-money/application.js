@@ -35,10 +35,10 @@ $(function() {
       );
 
       console.log(this.value)
-      console.log(this.input)
+      console.log($(this, input))
+      
       if (this.value === null || this.value === "" || this.value === "$0.00"){
-        var e = jQuery.Event("keyup");
-        this.trigger(e);
+
       }
 
   };
