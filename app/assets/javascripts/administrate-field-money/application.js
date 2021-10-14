@@ -33,6 +33,7 @@ $(function() {
         EVENTS_TO_SYNC,
         syncUnmaskedValueWithHiddenField
       );
+      console.log(this)
   };
 
   $('[data-maskmoney]').each(setupMaskMoney);
